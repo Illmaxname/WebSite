@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Language" content="ru">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="index.css" />
+  <title>Тест</title>
+</head>
+
+<body class="bgBody">
+  <script src="index.js"></script>
+  <div class="Header">
+    <h3 align="center">Тест по теории на главной странице</h3>
+  </div>
+  21
+  <div class="Body">
+    <div class="LeftPanel">
+    </div>
+    <div class="MiddlePanel">
+      <div class="testImage">
+        1 - <img src="images/mp1.jfif" width='260' height='160' alt='?.jfif' /> 2 - <img src="images/mp2.JPG" width='260' height='160' alt='?.jfif' /> 3 - <img src="images/mp3.jpg" width='260' height='160' alt='?.jfif' />
+      </div>
+      <form class="testForm">
+        <ol>
+          <li>На какой картинке представлен аэропорт Внуково?</li>
+          <p>
+            <input type="radio" name="img" value="1">1</p>
+          <p>
+            <input type="radio" name="img" value="2">2</p>
+          <p>
+            <input type="radio" name="img" value="3">3</p>
+          <li>Выберите зоны, на которые подразделяется аэропорт с точки зрения контроля доступа</li>
+          <p>
+            <input type="checkbox" name="zone1">Игровая зона</p>
+          <p>
+            <input type="checkbox" name="zone2">Неконтролируемая зона</p>
+          <p>
+            <input type="checkbox" name="zone3">Контролируемая зона</p>
+          <p>
+            <input type="checkbox" name="zone4">Зона отдыха</p>
+          <p>
+            <input type="checkbox" name="zone5">Зона контроля</p>
+          <p>
+            <input type="checkbox" name="zone6">Стерильная зона</p>
+          <li>К какому классу принадлежит аэропорт, если через него совершается 5000 перевозок в год?</li>
+          <p>
+            <input type="radio" name="clas" value="5">V</p>
+          <p>
+            <input type="radio" name="clas" value="4">IV</p>
+          <p>
+            <input type="radio" name="clas" value="3">III</p>
+          <p>
+            <input type="radio" name="clas" value="2">II</p>
+          <p>
+            <input type="radio" name="clas" value="1">I</p>
+          22
+        </ol>
+        <input class="button" type="button" value="Подтвердить ответы" id="getResBut" />
+        <div>
+          <p class="resultText" id="resultText"></p>
+        </div>
+      </form>
+      <script>
+        var outputRes = document.getElementById("resultText")
+        var resButton = document.getElementById("getResBut")
+        resButton.addEventListener('click', ShowTestRes, false)
+      </script>
+    </div>
+    <div class="RightPanel">
+    </div>
+  </div>
+</body>
